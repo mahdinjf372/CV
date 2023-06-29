@@ -8,27 +8,30 @@
     <link href="../dist/tailwindOutput.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div class="container mx-auto">
-      <div class="row flex">
-        <section class="min-h-screen w-2/5 px-2 pt-[70px]">
-          <div class="w-full">
+  <body class="bg-slate-200">
+    <div class="container mx-auto my-16 bg-white shadow-xl">
+      <div class="row flex flex-row">
+        <section class="flex min-h-screen w-2/5 flex-col px-2 pt-[30px]">
+          <div class="mx-auto w-[80%] xs:w-[100%] sm:w-[50%] md:w-[70%] lg:w-[50%]">
             <div
               class="imgbox relative flex aspect-square w-11/12 items-center justify-center rounded-full border-2 border-black p-2"
             >
               <img
-                src="../img/avatar-3.jpg"
+                src="../img/avatar.jpg"
                 alt="Mahdi Najafi Pasand"
                 class="aspect-square w-full flex-none rounded-full"
+                width="200"
+                height="200"
               />
 
               <i
-                class="absolute bottom-1/3 right-0 aspect-square w-[10px] rounded-full bg-black"
+                class="absolute bottom-[25%] right-[4px] aspect-square w-[10px] translate-y-[50%] transform rounded-full bg-black"
               ></i>
             </div>
           </div>
 
-          <div class="relative ml-3 w-full border-l-[1px] border-l-black">
+          <div            class="relative ml-3 h-full w-full border-l-[1px] border-l-black"
+          >
             <div class="w-100 relative mb-10 px-[16px]">
               <i
                 class="absolute -left-[5px] top-0 aspect-square w-[10px] rounded-full bg-black"
@@ -104,28 +107,57 @@
                 class="absolute -left-[5px] top-[7px] aspect-square w-[10px] rounded-full bg-black"
               ></i>
 
-              <h2 class="mb-3 font-bold uppercase">References</h2>
+              <h2 class="mb-3 font-bold uppercase">Skills</h2>
 
               <div class="mb-4">
-                <h4 class="text-md font-semibold uppercase">Lorem ipsum</h4>
-                <p class="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                  animi dignissimos quae molestiae nemo deserunt maxime saepe
-                  pariatur modi
-                </p>
-              </div>
-
-              <div>
-                <h4 class="text-md font-semibold uppercase">Lorem ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                  animi dignissimos quae molestiae nemo deserunt maxime saepe
-                  pariatur modi
-                </p>
+                <div class="flex flex-wrap">
+                  <span class="skill">C#</span>
+                  <span class="skill">ASP.NET Core</span>
+                  <span class="skill">Web Api</span>
+                  <span class="skill">RESTful</span>
+                </div>
+                <div class="flex flex-wrap">
+                  <span class="skill">SQL</span>
+                  <span class="skill">MongoDb</span>
+                </div>
+                <div class="flex flex-wrap">
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                  <span class="skill">Javascript</span>
+                </div>
+                <div class="flex flex-wrap">
+                  <span class="skill">JQuery</span>
+                  <span class="skill">Bootstrap</span>
+                  <span class="skill">Tailwind</span>
+                </div>
+                <div class="flex flex-wrap">
+                  <span class="skill">Performace</span>
+                  <span class="skill">Technical Seo</span>
+                </div>
               </div>
             </div>
 
-            <div class="w-100 relative px-[16px] pb-[70px]">
+            <div class="w-100 relative mb-8 px-[16px]">
+              <i
+                class="absolute -left-[5px] top-[7px] aspect-square w-[10px] rounded-full bg-black"
+              ></i>
+
+              <h2 class="mb-3 font-bold uppercase">Similar with</h2>
+
+              <div class="mb-4">
+                <div class="flex flex-wrap">
+                  <span class="skill">Identity</span>
+                  <span class="skill">MongoDb</span>
+                  <span class="skill">Vue.js</span>
+                  <span class="skill">Paypal Api</span>
+                  <span class="skill">Stripe Api</span>
+                  <span class="skill">Travel tour reservation system</span>
+                  <span class="skill">Flight reservation system</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 relative px-[16px] pb-[30px]">
               <i
                 class="absolute -left-[5px] top-[7px] aspect-square w-[10px] rounded-full bg-black"
               ></i>
@@ -133,18 +165,18 @@
               <h2 class="mb-3 font-bold uppercase">Language</h2>
 
               <div class="mb-1 flex justify-between">
-                <h4 class="text-md font-semibold uppercase">Persian</h4>
+                <h4 class="text-md">Persian</h4>
               </div>
 
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">English</h4>
+                <h4 class="text-md">English</h4>
               </div>
             </div>
           </div>
         </section>
 
         <section
-          class="relative ml-3 min-h-screen w-3/5 border-l-[1px] border-l-black pt-[75px]"
+          class="relative ml-3 min-h-screen w-3/5 border-l-[1px] border-l-black pb-[25px] pt-[75px]"
         >
           <div class="w-100 relative mb-8 px-[16px]">
             <i
@@ -152,9 +184,7 @@
             ></i>
             <h2 class="mb-3 font-bold uppercase">About me</h2>
             <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad animi
-              dignissimos quae molestiae nemo deserunt maxime saepe pariatur
-              modi
+              Smiling programmer interested in cycling and new challenges.
             </p>
           </div>
 
@@ -166,18 +196,25 @@
             <h2 class="mb-3 font-bold uppercase">Education</h2>
 
             <div class="mb-4">
+              <h4 class="text-md font-semibold uppercase">Zanjan University</h4>
+              <p class="text-sm">
+                After the year of study, I withdrew from this university and
+                field and continued my studies in my favorite field, which is
+                software engineering
+              </p>
+            </div>
+
+            <div class="mb-4">
               <h4 class="text-md font-semibold uppercase">
                 Shahre-Quds University
               </h4>
               <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                animi dignissimos quae molestiae nemo deserunt maxime saepe
-                pariatur modi
+                Studying in the field of software engineering
               </p>
             </div>
           </div>
 
-          <div class="w-100 relative mb-8 px-[16px]">
+          <div class="w-100 Experiences relative mb-8 px-[16px]">
             <i
               class="absolute -left-[5px] top-[7px] aspect-square w-[10px] rounded-full bg-black"
             ></i>
@@ -186,127 +223,119 @@
 
             <div class="mb-4">
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
+                <h4 class="text-md font-semibold">
                   Rentija.com
                   <span class="text-[12px] font-normal normal-case"
-                    >(Front End)</span
-                  >
-                </h4>
-                <span class="font-semibold">2021-2022</span>
-              </div>
-              <p class="text-sm">
-                In this project, which was my first professional project, I was the front-end developer. I have done the front end development of Rentija using HTML, CSS, Javascript, and JQuery.
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
-                  Javane.net
-                  <span class="text-[12px] font-normal normal-case"
-                    >(Back End, Front End)</span
+                    >(Front-end)</span
                   >
                 </h4>
                 <span class="font-semibold">2021</span>
               </div>
               <p class="text-sm">
-                In my second professional project called Javane, I served as a full-stack developer. I was responsible for all technical aspects of this project. Over 90% of the allocated time was dedicated to the front-end development. This project has been one of the most captivating projects I have worked on, as it introduced me to new challenges in the field of front-end development.
+                I rewrote the user interface of Rentija.com full time in this
+                company and within 3-4 months, the project was completely
+                rewritten using Html, Css, Javascript, JQuery and Bootstrap UI.
               </p>
             </div>
 
             <div class="mb-4">
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
+                <h4 class="text-md font-semibold">
+                  Javane.net
+                  <span class="text-[12px] font-normal normal-case"
+                    >(Back-end, Front-end)</span
+                  >
+                </h4>
+                <span class="font-semibold">2021</span>
+              </div>
+              <p class="text-sm">
+                Javane is a single page project designed to introduce a specific
+                company in the field of family healthcare software development.
+                This project has no complexity on the back-end side, and most of
+                the project's time has been spent on its UI.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between">
+                <h4 class="text-md font-semibold">
                   Lahzeakhar.com
                   <span class="text-[12px] font-normal normal-case"
-                    >(Back End, Front End, Seo Technical)</span
+                    >(Back-end, Front-end, Seo Technical)</span
                   >
                 </h4>
                 <span class="font-semibold">2021-2023</span>
               </div>
-              <p class="text-sm">
-                Collaborating with the last-minute team has been one of my best experiences, greatly contributing to my growth. In this project, I was hired as a full-stack developer and eventually took over the project's development independently. During my two-year tenure at Lahzeahkar, I handled database, backend, and frontend development, and in the final year, I was engaged in refactoring and rewriting the entire project. It's worth mentioning that the project incorporated advanced Technical SEO and performance optimization techniques.
-              </p>
+              <ul class="text-sm">
+                <li>
+                  Development, maintenance, refactoring and finally rewriting
+                  the entire project from 0 to 100 including user interface,
+                  backend, database redesign, user panels and...
+                </li>
+                <li>
+                  Providing better solutions to solve the problems of other
+                  teams, including SEO.
+                </li>
+                <li>Participating in the SEO team as a SEO technician.</li>
+                <li>
+                  The technologies and tools used are: Back-end: C#, Asp.Net
+                  Core, Web Api, Sql, MongoDb Fron-end: Html, Css, Javascript,
+                  JQuery, Bootstrap.
+                </li>
+              </ul>
             </div>
 
             <div class="mb-4">
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
+                <h4 class="text-md font-semibold">
                   old.darteeurope.de
                   <span class="text-[12px] font-normal normal-case"
-                    >(Back End)</span
+                    >(Back-end)</span
                   >
                 </h4>
                 <span class="font-semibold">2022</span>
               </div>
               <p class="text-sm">
-                Collaborating with the last-minute team has been one of my best experiences, greatly contributing to my growth. In this project, I was hired as a full-stack developer and eventually took over the project's development independently. During my two-year tenure at Lahzeahkar, I handled database, backend, and frontend development, and in the final year, I was engaged in refactoring and rewriting the entire project. It's worth mentioning that the project incorporated advanced Technical SEO and performance optimization techniques.
+                D'Arte Stone is a store site with paypal payment gateway. which
+                used templates for its UI.
               </p>
             </div>
 
             <div class="mb-4">
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
+                <h4 class="text-md font-semibold">
                   darteeurope.de
                   <span class="text-sm font-normal normal-case"
-                    >(Back End, Front End)</span
+                    >(Back-end, Front-end)</span
                   >
                 </h4>
                 <span class="font-semibold">2022</span>
               </div>
               <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                animi dignissimos quae molestiae nemo deserunt maxime saepe
-                pariatur modi
+                This time, the new version of the site was designed with a
+                dedicated user interface. In addition to the main entity of the
+                project and changing the product sales style, Identity was added
+                to it for easier user registration. Also, in addition to the
+                PayPal payment system that was in the previous version, the
+                Stripe payment system was also added to it.
               </p>
             </div>
 
             <div class="mb-4">
               <div class="flex justify-between">
-                <h4 class="text-md font-semibold uppercase">
+                <h4 class="text-md font-semibold">
                   Kaateb.net
                   <span class="text-sm font-normal normal-case"
-                    >(Back End, Front End, Seo Tecnical)</span
+                    >(Back-end, Front-end, Seo Tecnical)</span
                   >
                 </h4>
                 <span class="font-semibold">2023</span>
               </div>
               <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                animi dignissimos quae molestiae nemo deserunt maxime saepe
-                pariatur modi
+                It was time to work on my idea this time. Katab is an
+                intelligent content production platform, and all the technical
+                burden of this project is on my shoulders.
               </p>
-            </div>
-          </div>
-
-          <div class="w-100 relative mb-8 px-[16px]">
-            <i
-              class="absolute -left-[5px] top-[7px] aspect-square w-[10px] rounded-full bg-black"
-            ></i>
-
-            <h2 class="mb-3 font-bold uppercase">Skills</h2>
-
-            <div class="mb-4">
-              <div class="flex">
-                <span class="skill">C#</span>
-                <span class="skill">ASP.NET Core</span>
-                <span class="skill">Web Api</span>
-                <span class="skill">RESTful</span>
-                <span class="skill">SQL</span>
-                <span class="skill">MongoDb</span>
-              </div>
-              <div class="flex">
-                <span class="skill">Performace</span>
-                <span class="skill">Technical Seo</span>
-              </div>
-              <div class="flex">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">Javascript</span>
-                <span class="skill">JQuery</span>
-                <span class="skill">Bootstrap</span>
-                <span class="skill">Tailwind</span>
-              </div>
             </div>
           </div>
         </section>

@@ -3,13 +3,26 @@
 @tailwind utilities;
 
 .skill {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  --tw-bg-opacity: 1;
+  padding: 0.25rem 0.5rem;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   border-radius: 0.125rem;
   display: inline-block;
   margin: 0 0.5rem 0.5rem 0;
+  font-size: 13px;
+  font-weight: 500;
 }
+
+h2 {
+  font-size: 16px;
+}
+
+.Experiences h4 + span.font-semibold {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  body > .container {
+    max-width: 1024px;
+  }
+}
+
