@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body {
+  min-width: 1024px;
+} */
+
 .skill {
   padding: 0.25rem 0.5rem;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -20,9 +24,17 @@ h2 {
   font-size: 12px;
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen  and (min-width: 1024px) {
   body > .container {
     max-width: 1024px;
+  }
+}
+
+@media only print {
+  /*container mx-auto my-16 bg-white shadow-xl*/
+  body > .container {
+    margin: unset;
+    max-width: unset !important;
   }
 }
 
