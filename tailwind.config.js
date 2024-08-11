@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // content: ["./src/**/*.{html,js}"],
-  content: ["./src/index-fa.html"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        iransans: "iransans",
+      },
+    },
   },
   plugins: [],
 };

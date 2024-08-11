@@ -6,6 +6,26 @@
   min-width: 1024px;
 } */
 
+
+@font-face {
+	font-family: iransans;
+	src: url('../fonts/IRANSansXV.woff') format('woff-variations'), url('../fonts/IRANSansXV.woff') format('woff');
+	font-weight: 100 900;
+	font-display: fallback;
+	font-variation-settings: "wght" 300, "dots" 4;
+}
+
+* {
+	font-family: iransans;
+	-moz-font-feature-settings: "ss02";
+	-webkit-font-feature-settings: "ss02";
+	font-feature-settings: "ss02";
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 .skill {
   padding: 0.25rem 0.5rem;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
