@@ -27,9 +27,16 @@ jobs:
 
       - name: Prepare publish folder
         run: |
-          mkdir public
-          cp -r src/* public/
-          cp -r dist public/
+          PUBLISH_DIR=.github-pages
+          rm -rf "${PUBLISH_DIR}"
+          mkdir "${PUBLISH_DIR}"
+          cp -r src/* "${PUBLISH_DIR}"
+          cp -r dist "${PUBLISH_DIR}/dist"
+          cp -r img "${PUBLISH_DIR}/img"
+          cp -r fonts "${PUBLISH_DIR}/fonts"
+          cp -r css "${PUBLISH_DIR}/css"
+          cp -r public/* "${PUBLISH_DIR}/"
+          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|\.\./|/|g' {} +
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -37,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: './.github-pages'
 
       - name: Deploy to GitHub Pages
         id: deployment
