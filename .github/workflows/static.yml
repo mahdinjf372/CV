@@ -36,7 +36,6 @@ jobs:
           cp -r fonts "${PUBLISH_DIR}/fonts"
           cp -r css "${PUBLISH_DIR}/css"
           cp -r public/* "${PUBLISH_DIR}/"
-          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|\.\./|/|g' {} +
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
