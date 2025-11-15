@@ -36,7 +36,7 @@ jobs:
           cp -r fonts "${PUBLISH_DIR}/fonts"
           cp -r css "${PUBLISH_DIR}/css"
           cp -r public/* "${PUBLISH_DIR}/"
-          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|\.\./|/|g' {} +
+          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|\.\./|\./|g' {} +
           npx @tailwindcss/cli -i ./src/styles.css -o ./dist/tailwindOutput.css
 
       - name: Setup Pages
