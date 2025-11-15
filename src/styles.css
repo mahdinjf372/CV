@@ -12,7 +12,7 @@
 	src: url('../fonts/IRANSansXV.woff') format('woff-variations'), url('../fonts/IRANSansXV.woff') format('woff');
 	font-weight: 100 900;
 	font-display: fallback;
-	font-variation-settings: "wght" 300, "dots" 4;
+	font-variation-settings: "dots" 4;
 }
 
 * {
