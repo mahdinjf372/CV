@@ -50,7 +50,7 @@ jobs:
           cp -r public/* "${PUBLISH_DIR}/"
           find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|\.\./|\./|g' {} +
           find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|/fa|/CV/index-fa.html|g' {} +
-          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|/en|/CV/index-en.html|g' {} +
+          find "${PUBLISH_DIR}" -name '*.html' -exec sed -i 's|/en|/CV/index.html|g' {} +
           npx tailwindcss -i ./src/styles.css -o ./dist/tailwindOutput.css
 
       - name: Setup Pages
